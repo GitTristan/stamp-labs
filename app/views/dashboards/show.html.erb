@@ -1,5 +1,11 @@
 <div class="container">
-  hello <%= @user.email %>
-
+  <br />
+  Hello <%= @user.email %>
+  <br />
+  <br />
+  <%= link_to "Upload Image", edit_user_path(@user) %>
+  <br />
+  <br />
+  <%= image_tag @user.avatar.url(:medium) %>
 
 </div>
