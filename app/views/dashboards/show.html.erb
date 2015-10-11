@@ -5,7 +5,7 @@
     <br />
     <br />
     <%= link_to "Upload Image", edit_user_path(@user), class: "btn btn-success" %>
-    <%= link_to "Share with Buffer", root_path, class: "btn btn-primary" %>
+    <%= link_to "Share with Buffer", buffers_path, class: "btn btn-primary" %>
     <br />
     <br />
     <%= image_tag @user.avatar.url(:medium) %>
