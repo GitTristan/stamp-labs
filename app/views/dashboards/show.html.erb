@@ -1,14 +1,30 @@
 <div class="container">
-  <br />
-  Hello <%= @user.email %>
-  <br />
-  <br />
-  <%= link_to "Upload Image", edit_user_path(@user) %>
-  <br />
-  <br />
-  <%= image_tag @user.avatar.url(:medium) %>
-  <br />
-  <br />
-  <%= link_to "Connect to Buffer", root_path %>
+  <div class="text-center">
+    <br />
+    <h1> Hello <%= @user.email %> </h1>
+    <br />
+    <br />
+    <%= link_to "Upload Image", edit_user_path(@user), class: "btn btn-success" %>
+    <%= link_to "Share with Buffer", root_path, class: "btn btn-primary" %>
+    <br />
+    <br />
+    <%= image_tag @user.avatar.url(:medium) %>
+    <br />
+    <br />
+  </div>
 
+  <br />
+  <br />
+
+  <div class=row>
+    <div class="col-md-4">
+      <%=image_tag("telluride-01.jpg", class: "img-responsive")%>
+    </div>
+    <div class="col-md-4">
+      <%=image_tag("telluride-02.jpg", class: "img-responsive")%>
+    </div>
+    <div class="col-md-4">
+      <%=image_tag("telluride-03.jpg", class: "img-responsive")%>
+    </div>
+  </div>
 </div>
