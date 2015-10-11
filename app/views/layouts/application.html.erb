@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KanvasApp</title>
+  <title>Stamp Labs</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,8 +10,8 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <p class="navbar-brand">
-        <%=image_tag("kanvas-small.png", class: "img-responsive")%>
-        <h3><%= link_to "Kanvas App", root_path %></h3>
+        <%=image_tag("stamp-labs-logo-small.jpg", class: "img-responsive")%>
+        <h3><%= link_to "Stamp Labs", root_path %></h3>
         <div class="pull-right" id="header">
           <% if signed_in? -%>
             <%= button_to t(".sign_out"), sign_out_path, method: :delete %>

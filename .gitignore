@@ -15,3 +15,5 @@
 .git
 
 cloudinary.yml
+
+.ENV

@@ -10,6 +10,10 @@ gem "paperclip", "~> 4.3"
 
 gem 'simple_form', '~> 3.2.0'
 
+gem 'buffer', :github => 'bufferapp/buffer-ruby'
+
+gem 'omniauth-buffer2'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
