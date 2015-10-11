@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
+
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
 gem 'clearance', '~> 1.11.0'
@@ -13,6 +15,7 @@ gem 'simple_form', '~> 3.2.0'
 gem 'buffer', :github => 'bufferapp/buffer-ruby'
 
 gem 'omniauth-buffer2'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
