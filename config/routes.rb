@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  resources :dashboards
+
   resources :buffers
 
 end
