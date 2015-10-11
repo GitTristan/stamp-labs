@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
 
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "User was successfully created"
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
   def edit
     @user = User.find(params[:id])
   end
@@ -25,7 +35,7 @@ class UsersController < ApplicationController
 
 
   def user_params
-    params.require(:user).permit(:avatar)
+    params.require(:user).permit(:avatar, :email, :password)
   end
 
 
